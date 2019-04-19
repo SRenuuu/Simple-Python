@@ -1,0 +1,14 @@
+print("- Area Calculator -")
+x=input("Enter Object Name: ")
+if x[0].lower()=="r" :
+  length=float(input("Enter Length: "))
+  width=float(input("Enter Width: "))
+  answer=length*width
+  print("Area: ","%0.2f"%answer)
+elif x[0].lower()=="c":
+   radius=float(input("Enter Radius: "))
+   answer=(22/7)*(radius)*(radius)
+   print("Area: ","%0.2f"%answer)
+ 
+else: 
+  print("Sorry, only Rectangle & Circle are supported.")
