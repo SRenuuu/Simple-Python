@@ -1,0 +1,20 @@
+print("--- Total, Avg, Count, Min, Max  Calculator --- \n(Enter 0 to finish)\n")
+Count=0
+Tot=0
+num=float(input("Enter Number: "))
+if num==0:
+  print("Thanks for trying me out! Bye!")
+else:
+  Maxxx=num
+  Minnn=num
+  Tot+=num 
+  while num !=0 :
+    if num>Maxxx :
+      Maxxx=num
+    elif num<Minnn :
+      Minnn=num
+    num=float(input("Enter Number: "))
+    Tot+=num
+    Count+=1
+    Avg=Tot/Count
+  print("\nTotal: ","%0.2f"%Tot, "\nAverage: ", "%0.2f"%Avg,"\nCount: ", Count,"\nMinimum: ",Minnn,"\nMaximum: ",Maxxx)
