@@ -1,0 +1,6 @@
+print("- Multiplication Table -")
+x=int(input("Enter Number: "))
+y= int(input("Show Multiplications upto: "))
+for i in range(1,y+1):
+ print(x,"*",i,"=",x*i)
+print("End")
